@@ -382,28 +382,24 @@ template {
   display: none;
 }
 
-div {
-  background-color: blue;
-}
-
 ::-webkit-input-placeholder {
-  color: gray;
+  color: 0;
 }
 
 ::-moz-placeholder {
-  color: gray;
+  color: 0;
 }
 
 :-ms-input-placeholder {
-  color: gray;
+  color: 0;
 }
 
 ::-ms-input-placeholder {
-  color: gray;
+  color: 0;
 }
 
 ::placeholder {
-  color: gray;
+  color: 0;
 }
 
 .image {
@@ -414,14 +410,6 @@ div {
   .image {
     background-image: url("image@2x.png");
   }
-}
-
-body {
-  background-color: black;
-}
-
-html {
-  background-color: yellow;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -805,7 +793,4 @@ template {
 
 [hidden] {
   display: none;
-}
-div {
-  background-color: blue;
 }
