@@ -1,0 +1,26 @@
+{
+  "name": "homework-verstka-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "w",
+  "scripts": {
+    "build": "gulp css",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoksS/homework-verstka-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoksS/homework-verstka-/issues"
+  },
+  "homepage": "https://github.com/MoksS/homework-verstka-#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat-css": "^3.1.0"
+  }
+}
