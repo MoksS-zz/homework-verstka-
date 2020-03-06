@@ -382,33 +382,529 @@ template {
   display: none;
 }
 
-::-webkit-input-placeholder {
-  color: 0;
+@font-face {
+  font-family: "YS Text";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("//yastatic.net/s3/home/fonts/ys/1/text-regular.woff2") format("woff2"), url("//yastatic.net/s3/home/fonts/ys/1/text-regular.woff") format("woff");
 }
 
-::-moz-placeholder {
-  color: 0;
+@font-face {
+  font-family: "YS Text";
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("//yastatic.net/s3/home/fonts/ys/1/text-medium.woff2") format("woff2"), url("//yastatic.net/s3/home/fonts/ys/1/text-medium.woff") format("woff");
 }
 
-:-ms-input-placeholder {
-  color: 0;
+@font-face {
+  font-family: "YS Text";
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("//yastatic.net/s3/home/fonts/ys/1/text-bold.woff2") format("woff2"), url("//yastatic.net/s3/home/fonts/ys/1/text-bold.woff") format("woff");
 }
 
-::-ms-input-placeholder {
-  color: 0;
+:root {
+  --max-width: 824px;
+  --footer-text-color: #7F8285;
+  --pointer: url("../icon/Vector.svg");
 }
 
-::placeholder {
-  color: 0;
+html {
+  font-family: "YS Text";
+  font-style: normal;
 }
 
-.image {
-  background-image: url("image@1x.png");
+html,
+body {
+  min-width: 100%;
+  min-height: 100%;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .image {
-    background-image: url("image@2x.png");
+a {
+  text-decoration: none;
+}
+
+.Content {
+  min-height: calc(100vh - 48px - 32px);
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Content {
+    min-height: calc(100vh - 52px - 68px);
+  }
+}
+
+.Button {
+  border-radius: 4px;
+  border: none;
+  cursor: var(--pointer), auto;
+}
+
+.Button__color-control {
+  background: #E6E6E6;
+}
+
+.Button__color-action {
+  background: #FFCC00;
+}
+
+.Button__padding-control {
+  padding: 0px 13px 0px 25px;
+}
+
+.Button__padding-action {
+  padding: 0px 20px;
+}
+
+.Button__backgroundImage-control {
+  background-repeat: no-repeat;
+  background-image: url("../../icon/12_settings.png");
+  background-position: 8px 8px;
+}
+
+.Button_Text {
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+}
+
+.Button_Text__lineHeight-control {
+  line-height: 28px;
+}
+
+.Button_Text__lineHeight-action {
+  line-height: 36px;
+}
+
+.Button_Text__visible-control {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Button_Text__visible-control {
+    display: none;
+  }
+
+  .Button__padding-control {
+    padding: 14px;
+  }
+}
+
+.Copyright_Text {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.06px;
+  color: var(--footer-text-color);
+}
+
+@media only screen and (max-width: 1023px) {
+  .Copyright {
+    margin-top: 10px;
+  }
+}
+
+.Footer {
+  width: 100%;
+  background: #F0F2F3;
+}
+
+.Footer_Content {
+  padding: 7px 0px;
+  margin: auto;
+  max-width: var(--max-width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Footer_Content {
+    padding: 12px 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.Header {
+  max-width: 100%;
+  background: #FFFFFF;
+  padding: 10px 0px;
+}
+
+.Header_Content {
+  margin: auto;
+  max-width: var(--max-width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Header_Banner {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.Header_Banner__color-default {
+  color: #7F8285;
+}
+
+.Header_Banner__color-black {
+  color: #000000;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Header {
+    padding: 12px 16px;
+  }
+
+  .Header_Banner {
+    padding-top: 2px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.Link {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Link_ATag {
+  margin-right: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.06px;
+  color: var(--footer-text-color);
+  cursor: var(--pointer), auto;
+}
+
+.Link_ATag:hover {
+  color: #E00000;
+}
+
+.Logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 264px;
+  height: 248px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -53%);
+  transform: translate(-50%, -53%);
+}
+
+.Logo_Img {
+  width: 124px;
+  height: 124px;
+}
+
+.Logo_Text {
+  margin: 10px 26px 0px 26px;
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 125%;
+  /* or 16px */
+  text-align: center;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Logo {
+    -webkit-transform: translate(-50%, -56%);
+    transform: translate(-50%, -56%);
+  }
+}
+.Button {
+  border-radius: 4px;
+  border: none;
+  cursor: var(--pointer), auto;
+}
+
+.Button__color-control {
+  background: #E6E6E6;
+}
+
+.Button__color-action {
+  background: #FFCC00;
+}
+
+.Button__padding-control {
+  padding: 0px 13px 0px 25px;
+}
+
+.Button__padding-action {
+  padding: 0px 20px;
+}
+
+.Button__backgroundImage-control {
+  background-repeat: no-repeat;
+  background-image: url("../../icon/12_settings.png");
+  background-position: 8px 8px;
+}
+
+.Button_Text {
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+}
+
+.Button_Text__lineHeight-control {
+  line-height: 28px;
+}
+
+.Button_Text__lineHeight-action {
+  line-height: 36px;
+}
+
+.Button_Text__visible-control {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Button_Text__visible-control {
+    display: none;
+  }
+
+  .Button__padding-control {
+    padding: 14px;
+  }
+}
+.Copyright_Text {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.06px;
+  color: var(--footer-text-color);
+}
+
+@media only screen and (max-width: 1023px) {
+  .Copyright {
+    margin-top: 10px;
+  }
+}
+.Footer {
+  width: 100%;
+  background: #F0F2F3;
+}
+
+.Footer_Content {
+  padding: 7px 0px;
+  margin: auto;
+  max-width: var(--max-width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Footer_Content {
+    padding: 12px 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.Header {
+  max-width: 100%;
+  background: #FFFFFF;
+  padding: 10px 0px;
+}
+
+.Header_Content {
+  margin: auto;
+  max-width: var(--max-width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Header_Banner {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.Header_Banner__color-default {
+  color: #7F8285;
+}
+
+.Header_Banner__color-black {
+  color: #000000;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Header {
+    padding: 12px 16px;
+  }
+
+  .Header_Banner {
+    padding-top: 2px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.Link {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Link_ATag {
+  margin-right: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.06px;
+  color: var(--footer-text-color);
+  cursor: var(--pointer), auto;
+}
+
+.Link_ATag:hover {
+  color: #E00000;
+}
+.Logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 264px;
+  height: 248px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -53%);
+  transform: translate(-50%, -53%);
+}
+
+.Logo_Img {
+  width: 124px;
+  height: 124px;
+}
+
+.Logo_Text {
+  margin: 10px 26px 0px 26px;
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 125%;
+  /* or 16px */
+  text-align: center;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Logo {
+    -webkit-transform: translate(-50%, -56%);
+    transform: translate(-50%, -56%);
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

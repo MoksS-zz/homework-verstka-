@@ -1,0 +1,62 @@
+@import "./normalize.scss";
+
+
+@font-face {
+  font-family: "YS Text";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url(//yastatic.net/s3/home/fonts/ys/1/text-regular.woff2) format("woff2"),url(//yastatic.net/s3/home/fonts/ys/1/text-regular.woff) format("woff");
+}
+@font-face {
+  font-family: "YS Text";
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  src: url(//yastatic.net/s3/home/fonts/ys/1/text-medium.woff2) format("woff2"),url(//yastatic.net/s3/home/fonts/ys/1/text-medium.woff) format("woff");
+}
+@font-face {
+  font-family: "YS Text";
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: url(//yastatic.net/s3/home/fonts/ys/1/text-bold.woff2) format("woff2"),url(//yastatic.net/s3/home/fonts/ys/1/text-bold.woff) format("woff");
+}
+:root {
+  --max-width: 824px;
+  --footer-text-color: #7F8285;
+  --pointer: url("../icon/Vector.svg");
+}
+
+html {
+  font-family: "YS Text";
+  font-style: normal;
+}
+
+html, body {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Content {
+  min-height: calc(100vh - 48px - 32px);
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Content {
+    min-height: calc(100vh - 52px - 68px);
+  }
+}
+
+@import "./Buttons.scss";
+@import "./Copyright.scss";
+@import "./Footer.scss";
+@import "./Header.scss";
+@import "./Link.scss";
+@import "./Logo.scss";
+

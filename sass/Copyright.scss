@@ -1,0 +1,24 @@
+.Copyright {
+
+  &_Text {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06px;
+
+    color: var(--footer-text-color);
+  }
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .Copyright {
+    margin-top: 10px;
+  }
+ }
