@@ -408,7 +408,7 @@ template {
 
 :root {
   --max-width: 824px;
-  --footer-text-color: #7F8285;
+  --blue-grey-500: #7F8285;
   --pointer: url("../icon/Vector.svg");
 }
 
@@ -429,7 +429,8 @@ a {
 
 .Content {
   min-height: calc(100vh - 48px - 32px);
-  max-width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -510,7 +511,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.06px;
-  color: var(--footer-text-color);
+  color: var(--blue-grey-500);
 }
 
 @media only screen and (max-width: 1023px) {
@@ -580,7 +581,7 @@ a {
 }
 
 .Header_Banner__color-default {
-  color: #7F8285;
+  color: var(--blue-grey-500);
 }
 
 .Header_Banner__color-black {
@@ -621,7 +622,7 @@ a {
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.06px;
-  color: var(--footer-text-color);
+  color: var(--blue-grey-500);
   cursor: var(--pointer), auto;
 }
 
@@ -746,7 +747,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.06px;
-  color: var(--footer-text-color);
+  color: var(--blue-grey-500);
 }
 
 @media only screen and (max-width: 1023px) {
@@ -814,7 +815,7 @@ a {
 }
 
 .Header_Banner__color-default {
-  color: #7F8285;
+  color: var(--blue-grey-500);
 }
 
 .Header_Banner__color-black {
@@ -854,7 +855,7 @@ a {
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.06px;
-  color: var(--footer-text-color);
+  color: var(--blue-grey-500);
   cursor: var(--pointer), auto;
 }
 
@@ -906,6 +907,10 @@ a {
     -webkit-transform: translate(-50%, -56%);
     transform: translate(-50%, -56%);
   }
+}
+.SettingsForm {
+  width: 474px;
+  height: 400px;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 

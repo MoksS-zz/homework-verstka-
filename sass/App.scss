@@ -24,7 +24,7 @@
 }
 :root {
   --max-width: 824px;
-  --footer-text-color: #7F8285;
+  --blue-grey-500: #7F8285;
   --pointer: url("../icon/Vector.svg");
 }
 
@@ -44,7 +44,8 @@ a {
 
 .Content {
   min-height: calc(100vh - 48px - 32px);
-  max-width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 @media only screen and (max-width: 1023px) {
