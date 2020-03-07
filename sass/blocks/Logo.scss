@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
+  transform: translate(-50%, -50%);
   
   position: absolute;
   width: 264px;
@@ -29,7 +29,3 @@
     color: #000000;
   }
 }
-
-@media only screen and (max-width: 824px) {
-
- }
