@@ -1,0 +1,133 @@
+.ButtonsField {
+  display: flex;
+  flex-direction: row;
+
+  &__indent {
+    &-topXl {
+      margin-top: 25px;
+    }
+  }
+}
+
+.Button {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: var(--pointer), auto;
+  
+
+  &__indent {
+    &-rigth {
+      margin-right: 8px;
+    }
+  }
+
+  &__color {
+    &-control {
+      background-color: #E6E6E6;
+
+      &:hover {
+        background-color: var(--color-bg-control-hovered);
+      }
+
+      &:focus {
+        box-shadow: 0px 0px 0px 2px var(--color-border-focused);
+      }
+
+      &:disabled {
+        background-color: var(--color-bg-disabled);
+      }
+    }
+    &-action {
+      background-color: #FFCC00;
+      &:hover {
+        background-color: var(--color-bg-action-hovered);
+      }
+
+      &:focus {
+        box-shadow: 0px 0px 0px 2px var(--color-border-action-focused);
+      }
+
+      &:disabled {
+        background-color: var(--color-bg-disabled);
+      }
+    }
+
+    &-close {
+      background-color: #FFFFFF;
+    }
+  }
+
+  &__padding {
+    &-control {
+      padding: 0px 13px 0px 25px;
+    }
+
+    &-action {
+      padding: 0px 20px;
+    }
+
+    &-close {
+      padding: 8px 9px;
+    }
+  }
+
+  &__backgroundImage {
+    &-control {
+      background-repeat: no-repeat;
+      background-image: url("./../../icon/cog1.svg");
+      background-position: 8px 8px;
+    }
+
+    &-close {
+      background-size: 16px;
+      background-repeat: no-repeat;
+      background-image: url("./../../icon/close.svg");
+      background-position: 50% 50%;
+    }
+  }
+
+  &_Text {
+    font-family: "YS Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+
+    &__lineHeight {
+      &-control {
+        line-height: 28px;
+      }
+      &-action {
+        line-height: 36px;
+      }
+    }
+
+    &__visible {
+      &-control {
+        display: inline-block;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1023px) {
+  .Button {
+
+    &_Text {
+
+      &__visible {
+        &-control {
+          display: none;
+        }
+      }
+    }
+
+    &__padding {
+      &-control {
+        padding: 14px;
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../build/bundle.css">
   <title>Settings</title>
 </head>
-<body>
+<body class="Page">
   <header class="Header">
     <div class="Header_Content">
       <h1 class="Header_Banner Header_Banner__color-default">School CI server</h1>
@@ -14,16 +14,50 @@
   </header>
 
   <div class="Content">
-    <div class="SettingsForm">
-      <h2 class="SettingsForm_H2">Settings</h2>
-      <p class="SettingsForm_Description"></p>
+    <div class="FormField">
+      <h2 class="FormField_H2">Settings</h2>
+      <p class="FormField_Description">Configure repository connection and synchronization settings.</p>
+
       <div class="InputForm">
-        <h3>GitHub repository</h3>
-        <input type="text" placeholder="">
+        <p class="InputForm_Name">GitHub repository <span class="InputForm_Bind">*</span></p>
+        <div class="InputForm_Field">
+          <input class="InputForm_Input" type="text" placeholder="user-name/repo-name" name="reposetory">
+          <button class="Button Button__padding-close Button__backgroundImage-close Button__color-close"></button>
+        </div>
       </div>
-      <div class="InputForm"></div>
-      <div class="InputForm"></div>
-      <div class="InputForm"></div>
+
+      <div class="InputForm">
+        <p class="InputForm_Name">Build command</p>
+        <div class="InputForm_Field">
+          <input class="InputForm_Input" id="command" type="text" placeholder="npm ci && npm run build" value="npm ci && npm run build">
+          <button class="Button Button__padding-close Button__backgroundImage-close Button__color-close"></button>
+        </div>
+      </div>
+
+      <div class="InputForm">
+        <p class="InputForm_Name">Main branch</p>
+        <div class="InputForm_Field">
+          <input class="InputForm_Input" type="text" value="master" placeholder="master">
+          <button class="Button Button__padding-close Button__backgroundImage-close Button__color-close"></button>
+        </div>
+      </div>
+
+      <div class="InputForm InputForm__flex-active">
+        <p class="InputForm_Name InputForm_Name__indent-none InputForm_Name__indent-rigth">Synchronize every</p>
+        <div class="InputForm_Field  InputForm_Field__sizeWidth-small InputForm_Field__position-rigth">
+          <input class="InputForm_Input InputForm_Input__sizeWidth-small" type="text" maxlength="2" placeholder="10" name="minutes" value="10">
+        </div>
+        <span class="InputForm_Span">minutes</span>
+      </div>
+
+      <div class="ButtonsField ButtonsField__indent-topXl">
+        <Button class="Button Button__indent-rigth Button__color-action Button__padding-action">
+          <span class="Button_Text Button_Text__lineHeight-action">Save</span>
+        </Button>
+        <Button class="Button Button__color-control Button__padding-action">
+          <span class="Button_Text Button_Text__lineHeight-action">Cancel</span>
+        </Button>
+      </div>
     </div>
   </div>
 
