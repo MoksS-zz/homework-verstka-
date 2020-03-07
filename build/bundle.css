@@ -447,31 +447,53 @@ template {
   color: #cccccc;
 }
 
-html {
-  font-family: "YS Text";
-  font-style: normal;
-}
-
 html,
 body {
-  min-width: 100%;
-  min-height: 100%;
+  font-family: "YS Text";
+  font-style: normal;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
 }
 
+.Page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .Content {
-  position: relative;
-  min-height: calc(100vh - 48px - 32px);
-  max-width: var(--max-width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: var(--max-width);
   margin: auto;
+}
+
+.Content__center-on {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 824px) {
   .Content {
-    min-height: calc(100vh - 52px - 68px);
+    width: 100%;
     padding: 14px 16px 12px 16px;
   }
 }
@@ -807,13 +829,8 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
   width: 264px;
   height: 248px;
-  left: 50%;
-  top: 50%;
 }
 
 .Logo_Img {
@@ -835,7 +852,6 @@ a {
 
 .FormField {
   width: 474px;
-  height: 400px;
 }
 
 .FormField_H2 {
@@ -963,10 +979,9 @@ a {
   outline-offset: 0;
 }
 
-@media only screen and (max-width: 824px) {
+@media only screen and (max-width: 501px) {
   .FormField {
-    width: 288px;
-    height: 458px;
+    width: 100%;
   }
 
   .FormField_Description {

@@ -1,7 +1,6 @@
 .FormField {
 
   width: 474px;
-  height: 400px;
 
   &_H2 {
     font-style: normal;
@@ -125,10 +124,9 @@
   }
 }
 
-@media only screen and (max-width: 824px) {
+@media only screen and (max-width: 501px) {
   .FormField {
-    width: 288px;
-    height: 458px;
+    width: 100%;
 
     &_Description {
       margin-bottom: 14px;

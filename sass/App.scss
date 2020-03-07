@@ -47,30 +47,38 @@
   color: #cccccc;
 }
 
-html {
+html, body {
   font-family: "YS Text";
   font-style: normal;
-}
-
-html, body {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
 }
 
+.Page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .Content {
-  position: relative;
-  min-height: calc(100vh - 48px - 32px);
-  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: var(--max-width);
   margin: auto;
+
+  &__center-on {
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 824px) {
   .Content {
-    min-height: calc(100vh - 52px - 68px);
+    width: 100%;
     padding: 14px 16px 12px 16px;
   }
 }
