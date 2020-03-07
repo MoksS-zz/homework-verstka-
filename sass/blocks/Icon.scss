@@ -1,4 +1,5 @@
 .Icon {
+  display: block;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 
@@ -16,6 +17,11 @@
     &-default {
       width: 24px;
       height: 24px;
+    }
+
+    &-xl {
+      width: 28px;
+      height: 28px;
     }
 
     &-xs {
@@ -51,6 +57,18 @@
 
     &-time {
       background-image: url("../../icon/clock1.svg");
+    }
+
+    &-control {
+      background-image: url("../../icon/cog1.svg");
+    }
+
+    &-close {
+      background-image: url("./../../icon/close.svg");
+    }
+
+    &-play {
+      background-image: url(./../../icon/12_play.svg);
     }
   }
 

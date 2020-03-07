@@ -520,22 +520,33 @@ a {
 }
 
 .Button {
+  padding: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 4px;
   border: none;
   outline: none;
   cursor: var(--pointer), auto;
 }
 
-.Button__indent-rigth {
+.Button__indentRigth-s {
   margin-right: 8px;
 }
 
-.Button__indent-rigthStable {
-  margin-right: 8px;
+.Button__indentLeft-s {
+  margin-left: 8px;
+}
+
+.Button__indentBottom-s {
+  margin-bottom: 12px;
 }
 
 .Button__indentBottom-xl {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .Button__indentTop-s {
@@ -585,7 +596,7 @@ a {
 }
 
 .Button__padding-control {
-  padding: 0px 13px 0px 25px;
+  padding: 0 13px 0 0;
 }
 
 .Button__padding-action {
@@ -596,53 +607,12 @@ a {
   padding: 8px 9px;
 }
 
-.Button__backgroundImage-rebuild {
-  background-image: url("../../icon/rebuild.svg");
-  background-repeat: no-repeat;
-  background-position: 8px 8px;
-}
-
-.Button__backgroundImage-play {
-  background-image: url("../../icon/12_play.svg");
-  background-repeat: no-repeat;
-  background-position: 9px 9px;
-}
-
-.Button__backgroundImage-control {
-  background-repeat: no-repeat;
-  background-image: url("../../icon/cog1.svg");
-  background-position: 8px 8px;
-}
-
-.Button__backgroundImage-close {
-  background-size: 16px;
-  background-repeat: no-repeat;
-  background-image: url("../../icon/close.svg");
-  background-position: 50% 50%;
-}
-
 .Button__height-default {
   height: 28px;
 }
 
-.Button_Text {
-  font-family: "YS Text";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  color: #000000;
-}
-
-.Button_Text__lineHeight-control {
-  line-height: 28px;
-}
-
-.Button_Text__lineHeight-action {
-  line-height: 36px;
-}
-
-.Button_Text__visible-control {
-  display: inline-block;
+.Button__height-action {
+  height: 36px;
 }
 
 @media only screen and (max-width: 824px) {
@@ -660,20 +630,20 @@ a {
     flex-direction: row;
   }
 
-  .Button__indent-rigth {
+  .Button {
+    padding: 0px;
+  }
+
+  .Button__padding-action {
+    padding: 0px 20px;
+  }
+
+  .Button__indentRigth-s {
     margin-right: 0px;
   }
 
-  .Button__indent-bottom {
-    margin-bottom: 12px;
-  }
-
-  .Button_Text__visible-control {
-    display: none;
-  }
-
   .Button__padding-control {
-    padding: 14px;
+    padding: 0px;
   }
 }
 
@@ -753,6 +723,12 @@ a {
 }
 
 .Header_Banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-preferred-size: 70%;
   flex-basis: 70%;
   margin: 0;
@@ -1014,6 +990,14 @@ a {
   font-weight: 500;
 }
 
+.Text__lineHeight-xxxxl {
+  line-height: 36px;
+}
+
+.Text__lineHeight-xxl {
+  line-height: 28px;
+}
+
 .Text__lineHeight-xl {
   line-height: 20px;
 }
@@ -1054,7 +1038,15 @@ a {
   margin-right: 4px;
 }
 
+.Text__hide-on {
+  display: block;
+}
+
 @media only screen and (max-width: 824px) {
+  .Text__hide-on {
+    display: none;
+  }
+
   .Text__indentLeft-xs {
     margin-left: 36px;
   }
@@ -1288,6 +1280,7 @@ a {
 }
 
 .Icon {
+  display: block;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -1303,6 +1296,11 @@ a {
 .Icon__size-default {
   width: 24px;
   height: 24px;
+}
+
+.Icon__size-xl {
+  width: 28px;
+  height: 28px;
 }
 
 .Icon__size-xs {
@@ -1336,6 +1334,18 @@ a {
 
 .Icon__img-time {
   background-image: url("../../icon/clock1.svg");
+}
+
+.Icon__img-control {
+  background-image: url("../../icon/cog1.svg");
+}
+
+.Icon__img-close {
+  background-image: url("../../icon/close.svg");
+}
+
+.Icon__img-play {
+  background-image: url("../../icon/12_play.svg");
 }
 
 .Log {

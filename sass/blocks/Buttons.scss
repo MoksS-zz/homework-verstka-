@@ -14,25 +14,34 @@
 }
 
 .Button {
+  padding: 0;
+  justify-content: center;
+  display: flex;
   border-radius: 4px;
   border: none;
   outline: none;
   cursor: var(--pointer), auto;
   
 
-  &__indent {
-    &-rigth {
-      margin-right: 8px;
-    }
-
-    &-rigthStable {
+  &__indentRigth {
+    &-s {
       margin-right: 8px;
     }
   }
 
+  &__indentLeft {
+    &-s {
+      margin-left: 8px;
+    }
+  }
+
   &__indentBottom {
+    &-s {
+      margin-bottom: 12px;
+    }
+
     &-xl {
-      margin-bottom: 16px;
+      margin-bottom: 20px;
     }
   }
 
@@ -85,7 +94,7 @@
     }
 
     &-control {
-      padding: 0px 13px 0px 25px;
+      padding: 0 13px 0 0;
     }
 
     &-action {
@@ -97,62 +106,15 @@
     }
   }
 
-  &__backgroundImage {
-    &-rebuild {
-      background-image: url(./../../icon/rebuild.svg);
-      background-repeat: no-repeat;
-      background-position: 8px 8px;
-    }
-
-    &-play {
-      background-image: url(./../../icon/12_play.svg);
-      background-repeat: no-repeat;
-      background-position: 9px 9px;
-    }
-
-    &-control {
-      background-repeat: no-repeat;
-      background-image: url("./../../icon/cog1.svg");
-      background-position: 8px 8px;
-    }
-
-    &-close {
-      background-size: 16px;
-      background-repeat: no-repeat;
-      background-image: url("./../../icon/close.svg");
-      background-position: 50% 50%;
-    }
-  }
-
   &__height {
     &-default {
       height: 28px;
     }
-  }
 
-  &_Text {
-    font-family: "YS Text";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    color: #000000;
-
-    &__lineHeight {
-      &-control {
-        line-height: 28px;
-      }
-      &-action {
-        line-height: 36px;
-      }
-    }
-
-    &__visible {
-      &-control {
-        display: inline-block;
-      }
+    &-action {
+      height: 36px
     }
   }
-
 }
 
 @media only screen and (max-width: 824px) {
@@ -166,29 +128,25 @@
 
 
   .Button {
+    padding: 0px;
 
-    &__indent {
-      &-rigth {
-        margin-right: 0px;
-      }
+    &__padding {
 
-      &-bottom {
-        margin-bottom: 12px;
+      &-action {
+        padding: 0px 20px;
       }
     }
 
-    &_Text {
 
-      &__visible {
-        &-control {
-          display: none;
-        }
+    &__indentRigth {
+      &-s {
+        margin-right: 0px;
       }
     }
 
     &__padding {
       &-control {
-        padding: 14px;
+        padding: 0px;
       }
     }
   }

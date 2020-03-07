@@ -12,6 +12,8 @@
   }
 
   &_Banner {
+    display: flex;
+    align-items: center;
     flex-basis: 70%;
     margin: 0;
     font-weight: 500;

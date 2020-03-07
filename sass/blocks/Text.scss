@@ -27,6 +27,13 @@
   }
 
   &__lineHeight {
+    &-xxxxl {
+      line-height: 36px;
+    }
+    &-xxl {
+      line-height: 28px;
+    }
+
     &-xl {
       line-height: 20px;
     }
@@ -73,11 +80,19 @@
       margin-right: 4px;
     }
   }
+
+  &__hide-on{
+    display: block;
+  }
 }
 
 
 
 @media only screen and (max-width: 824px) {
+  .Text__hide-on{
+    display: none;
+  }
+
   .Text__indentLeft-xs {
     margin-left: 36px; 
   }
