@@ -412,6 +412,9 @@ template {
 }
 
 :root {
+  --orange-500: #FF9A00;
+  --red-500: #FF3333;
+  --secondary: #b3b3b3;
   --max-width: 824px;
   --blue-grey-500: #7F8285;
   --color-bg-heavy: #D9D9D9;
@@ -465,7 +468,7 @@ a {
   margin: auto;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 824px) {
   .Content {
     min-height: calc(100vh - 52px - 68px);
     padding: 14px 16px 12px 16px;
@@ -486,6 +489,13 @@ a {
   margin-top: 25px;
 }
 
+.ButtonsField__column-off {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 .Button {
   border-radius: 4px;
   border: none;
@@ -495,6 +505,18 @@ a {
 
 .Button__indent-rigth {
   margin-right: 8px;
+}
+
+.Button__indent-rigthStable {
+  margin-right: 8px;
+}
+
+.Button__indentBottom-xl {
+  margin-bottom: 16px;
+}
+
+.Button__indentTop-s {
+  margin-top: 8px;
 }
 
 .Button__color-control {
@@ -535,6 +557,10 @@ a {
   background-color: #FFFFFF;
 }
 
+.Button__padding-default {
+  padding: 14px;
+}
+
 .Button__padding-control {
   padding: 0px 13px 0px 25px;
 }
@@ -545,6 +571,18 @@ a {
 
 .Button__padding-close {
   padding: 8px 9px;
+}
+
+.Button__backgroundImage-rebuild {
+  background-image: url("../../icon/rebuild.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+}
+
+.Button__backgroundImage-play {
+  background-image: url("../../icon/12_play.svg");
+  background-repeat: no-repeat;
+  background-position: 9px 9px;
 }
 
 .Button__backgroundImage-control {
@@ -558,6 +596,10 @@ a {
   background-repeat: no-repeat;
   background-image: url("../../icon/close.svg");
   background-position: 50% 50%;
+}
+
+.Button__height-default {
+  height: 28px;
 }
 
 .Button_Text {
@@ -580,12 +622,19 @@ a {
   display: inline-block;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 824px) {
   .ButtonsField {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .ButtonsField__column-off {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .Button__indent-rigth {
@@ -622,7 +671,7 @@ a {
   color: var(--blue-grey-500);
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 824px) {
   .Copyright {
     margin-top: 10px;
   }
@@ -649,7 +698,7 @@ a {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 824px) {
   .Footer_Content {
     padding: 12px 16px;
     -webkit-box-orient: vertical;
@@ -681,11 +730,17 @@ a {
 }
 
 .Header_Banner {
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
   margin: 0;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.25px;
+}
+
+.Header_Banner__lineHeight-l {
+  line-height: 30px;
 }
 
 .Header_Banner__color-default {
@@ -696,13 +751,12 @@ a {
   color: #000000;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 824px) {
   .Header {
     padding: 12px 16px;
   }
 
   .Header_Banner {
-    padding-top: 2px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -906,7 +960,7 @@ a {
   outline-offset: 0;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 824px) {
   .FormField {
     width: 288px;
     height: 458px;
@@ -914,5 +968,368 @@ a {
 
   .FormField_Description {
     margin-bottom: 14px;
+  }
+}
+
+.Text {
+  font-family: "YS Text";
+  font-style: normal;
+}
+
+.Text__size-m {
+  font-size: 13px;
+}
+
+.Text__size-s {
+  font-size: 15px;
+}
+
+.Text__size-l {
+  font-size: 18px;
+}
+
+.Text__weight-small {
+  font-weight: 400;
+}
+
+.Text__weight-normal {
+  font-weight: 500;
+}
+
+.Text__lineHeight-xl {
+  line-height: 20px;
+}
+
+.Text__lineHeight-l {
+  line-height: 16px;
+}
+
+.Text__color-default {
+  color: var(--black);
+}
+
+.Text__color-secondary {
+  color: #595959;
+}
+
+.Text__color-green {
+  color: #00B341;
+}
+
+.Text__color-hash {
+  color: #595959;
+}
+
+.Text__color-red {
+  color: var(--red-500);
+}
+
+.Text__color-orange {
+  color: var(--orange-500);
+}
+
+.Text__indentLeft-xs {
+  margin-left: 4px;
+}
+
+.Text__indentRigth-xs {
+  margin-right: 4px;
+}
+
+@media only screen and (max-width: 824px) {
+  .Text__indentLeft-xs {
+    margin-left: 36px;
+  }
+}
+
+.Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-shadow: 0px 1px 1px #4344454d, 0px 0px 1px #4344454d;
+  box-shadow: 0px 1px 1px #4344454d, 0px 0px 1px #4344454d;
+  border-radius: 6px;
+  padding: 12px 24px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Card__indentBottom-xs {
+  margin-bottom: 4px;
+}
+
+.Card__indentBottom-s {
+  margin-bottom: 8px;
+}
+
+.Card__indentBottom-l {
+  margin-bottom: 10px;
+}
+
+.Card_Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Card_Date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Card_Build {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Card_Build__indentBottom-xs {
+  margin-bottom: 4px;
+}
+
+.Card_Build__indentBottom-s {
+  margin-bottom: 8px;
+}
+
+.Card_Build__indentBottom-l {
+  margin-bottom: 10px;
+}
+
+.Card_Day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Card_Hour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Card_Commit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Card_Commit__indentLeft-xxl {
+  margin-left: 32px;
+}
+
+.Card_Branch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Card_Branch__indentRigth-xs {
+  margin-right: 4px;
+}
+
+.Card_Branch__indentRigth-l {
+  margin-right: 10px;
+}
+
+.Card_User {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Card_Status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Card:hover {
+  -webkit-box-shadow: 0px 2px 8px #4344454d, 0px 0px 1px #4344454d;
+  box-shadow: 0px 2px 8px #4344454d, 0px 0px 1px #4344454d;
+  cursor: var(--pointer), auto;
+}
+
+@media only screen and (max-width: 824px) {
+  .Card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .Card_Info {
+    border-bottom: 1px solid #F0F2F3;
+  }
+
+  .Card_Date {
+    margin-top: 8px;
+    margin-left: 36px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .Card_Build {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .Card_Commit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-left: 36px;
+  }
+
+  .Card_Branch {
+    margin-bottom: 8px;
+  }
+
+  .Card_User {
+    margin-bottom: 8px;
+  }
+}
+
+.Icon {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.Icon__indentRigth-s {
+  margin-right: 8px;
+}
+
+.Icon__indentRigth-xs {
+  margin-right: 4px;
+}
+
+.Icon__size-default {
+  width: 24px;
+  height: 24px;
+}
+
+.Icon__size-xs {
+  width: 16px;
+  height: 16px;
+}
+
+.Icon__img-success {
+  background-image: url("../../icon/Success.svg");
+}
+
+.Icon__img-code {
+  background-image: url("../../icon/code-commit1.svg");
+}
+
+.Icon__img-user {
+  background-image: url("../../icon/user1.svg");
+}
+
+.Icon__img-calendar {
+  background-image: url("../../icon/calendar1.svg");
+}
+
+.Icon__img-clock {
+  background-image: url("../../icon/clock.svg");
+}
+
+.Icon__img-error {
+  background-image: url("../../icon/err.svg");
+}
+
+.Icon__img-time {
+  background-image: url("../../icon/clock1.svg");
+}
+
+.Log {
+  border-radius: 6px;
+  background-color: var(--color-bg-disabled);
+  margin: 16px 0 20px 0;
+  padding: 8px 12px;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 824px) {
+  .Log {
+    margin: 16px -16px 16px -16px;
   }
 }

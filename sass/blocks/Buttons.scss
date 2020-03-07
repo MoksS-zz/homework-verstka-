@@ -7,6 +7,10 @@
       margin-top: 25px;
     }
   }
+
+  &__column-off {
+    flex-direction: row;
+  }
 }
 
 .Button {
@@ -19,6 +23,22 @@
   &__indent {
     &-rigth {
       margin-right: 8px;
+    }
+
+    &-rigthStable {
+      margin-right: 8px;
+    }
+  }
+
+  &__indentBottom {
+    &-xl {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__indentTop {
+    &-s {
+      margin-top: 8px;
     }
   }
 
@@ -59,6 +79,11 @@
   }
 
   &__padding {
+
+    &-default {
+      padding: 14px;
+    }
+
     &-control {
       padding: 0px 13px 0px 25px;
     }
@@ -73,6 +98,18 @@
   }
 
   &__backgroundImage {
+    &-rebuild {
+      background-image: url(./../../icon/rebuild.svg);
+      background-repeat: no-repeat;
+      background-position: 8px 8px;
+    }
+
+    &-play {
+      background-image: url(./../../icon/12_play.svg);
+      background-repeat: no-repeat;
+      background-position: 9px 9px;
+    }
+
     &-control {
       background-repeat: no-repeat;
       background-image: url("./../../icon/cog1.svg");
@@ -84,6 +121,12 @@
       background-repeat: no-repeat;
       background-image: url("./../../icon/close.svg");
       background-position: 50% 50%;
+    }
+  }
+
+  &__height {
+    &-default {
+      height: 28px;
     }
   }
 
@@ -112,9 +155,13 @@
 
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 824px) {
   .ButtonsField {
     flex-direction: column;
+
+    &__column-off {
+      flex-direction: row;
+    }
   }
 
 

@@ -12,11 +12,18 @@
   }
 
   &_Banner {
+    flex-basis: 70%;
     margin: 0;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.25px;
+
+    &__lineHeight {
+      &-l {
+        line-height: 30px;
+      }
+    }
 
     &__color {
       &-default {
@@ -30,14 +37,14 @@
   }
 }
 
-@media only screen and (max-width: 1023px) {
- .Header {
-   padding: 12px 16px;
 
-   &_Banner {
-    padding-top: 2px;
-    font-size: 18px;
-    line-height: 22px;
-   }
- }
+@media only screen and (max-width: 824px) {
+  .Header {
+    padding: 12px 16px;
+ 
+    &_Banner {
+     font-size: 18px;
+     line-height: 22px;
+    }
+  }
 }

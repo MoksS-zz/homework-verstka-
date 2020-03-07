@@ -1,0 +1,84 @@
+.Text {
+  font-family: "YS Text";
+  font-style: normal;
+
+  &__size {
+    &-m {
+      font-size: 13px;
+    }
+
+    &-s {
+      font-size: 15px;
+    }
+
+    &-l {
+      font-size: 18px;
+    }
+  }
+
+  &__weight {
+    &-small {
+      font-weight: 400;
+    }
+
+    &-normal {
+      font-weight: 500;
+    }
+  }
+
+  &__lineHeight {
+    &-xl {
+      line-height: 20px;
+    }
+
+    &-l {
+      line-height: 16px;
+    }
+  }
+
+  &__color {
+    &-default {
+      color: var(--black);
+    }
+
+    &-secondary {
+      color: #595959;
+    }
+
+    &-green {
+      color: #00B341;
+    }
+    
+    &-hash {
+      color:#595959;
+    }
+
+    &-red {
+      color: var(--red-500);
+    }
+
+    &-orange {
+      color: var(--orange-500);
+    }
+  }
+
+  &__indentLeft { 
+    &-xs {
+      margin-left: 4px;
+    }
+  }
+
+  &__indentRigth { 
+    &-xs {
+      margin-right: 4px;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 824px) {
+  .Text__indentLeft-xs {
+    margin-left: 36px; 
+  }
+}
