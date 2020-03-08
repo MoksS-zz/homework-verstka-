@@ -1,5 +1,5 @@
 .Header {
-  max-width: 100%;
+  width: 100%;
   background: #FFFFFF;
   padding: 10px 0px;
 
@@ -29,11 +29,11 @@
 
     &__color {
       &-default {
-        color: var(--blue-grey-500);
+        color: var(--grey-1000);
       }
 
       &-black {
-        color: #000000;
+        color: var(--black);
       }
     }
   }

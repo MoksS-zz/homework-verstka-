@@ -31,6 +31,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &__marginLeftTop-on {
+      margin-top: 8px;
+      margin-left: 31px;
+    }
+
+    &__row-on {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &__DinamicColor-on {
+        color: var(--black);
+    }
   }
 
   &_Build {
@@ -51,6 +65,10 @@
         margin-bottom: 10px;
       }
     }
+  }
+
+  &__column-on {
+    flex-direction: column;
   }
 
   &_Day {
@@ -74,6 +92,11 @@
       &-xxl {
         margin-left: 32px;
       }
+    }
+
+    &__border-bottom {
+      border-bottom: 1px solid var(--grey-50);
+      padding-bottom: 8px;
     }
   }
 
@@ -115,15 +138,16 @@
 @media only screen and (max-width: 824px) {
   .Card {
     flex-direction: column;
-    
-    &_Info {
-      border-bottom: 1px solid #F0F2F3;
-    }
 
     &_Date {
       margin-top: 8px;
       margin-left: 36px;
       flex-direction: row;
+      justify-content: flex-start;
+
+      &__DinamicColor-on {
+        color: var(--grey-1100);
+      }
     }
 
     &_Build {
@@ -132,9 +156,11 @@
     }
 
     &_Commit {
+      padding-bottom: 0px;
       flex-direction: column;
       align-items: flex-start;
       margin-left: 36px;
+      border-bottom: 1px solid var(--grey-50);
     }
 
     &_Branch {

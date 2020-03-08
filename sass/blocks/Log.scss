@@ -1,11 +1,11 @@
 .Log {
   border-radius: 6px;
-  background-color: var(--color-bg-disabled);
+  background-color: var(--grey-10);
   margin: 16px 0 20px 0;
   padding: 8px 12px;
   overflow-x: auto;
   
-  @media screen and (max-width: 824px) {
+  @media only screen and (max-width: 824px) {
       margin: 16px -16px 16px -16px;
   }
 }

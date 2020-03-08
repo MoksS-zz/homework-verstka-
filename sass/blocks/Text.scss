@@ -49,15 +49,15 @@
     }
 
     &-secondary {
-      color: #595959;
+      color: var(--grey-1100);
     }
 
     &-green {
-      color: #00B341;
+      color: var(--green-500);
     }
     
     &-hash {
-      color:#595959;
+      color:var(--grey-1100);
     }
 
     &-red {
@@ -78,6 +78,10 @@
   &__indentRigth { 
     &-xs {
       margin-right: 4px;
+    }
+
+    &-m {
+      margin-right: 10px;
     }
   }
 
