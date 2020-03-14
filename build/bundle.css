@@ -1346,43 +1346,43 @@ a {
 }
 
 .Icon__img-success {
-  background-image: url("../../icon/Success.svg");
+  background-image: url("../icon/Success.svg");
 }
 
 .Icon__img-code {
-  background-image: url("../../icon/code-commit1.svg");
+  background-image: url("../icon/code-commit1.svg");
 }
 
 .Icon__img-user {
-  background-image: url("../../icon/user1.svg");
+  background-image: url("../icon/user1.svg");
 }
 
 .Icon__img-calendar {
-  background-image: url("../../icon/calendar1.svg");
+  background-image: url("../icon/calendar1.svg");
 }
 
 .Icon__img-clock {
-  background-image: url("../../icon/clock.svg");
+  background-image: url("../icon/clock.svg");
 }
 
 .Icon__img-error {
-  background-image: url("../../icon/err.svg");
+  background-image: url("../icon/err.svg");
 }
 
 .Icon__img-time {
-  background-image: url("../../icon/clock1.svg");
+  background-image: url("../icon/clock1.svg");
 }
 
 .Icon__img-control {
-  background-image: url("../../icon/cog1.svg");
+  background-image: url("../icon/cog1.svg");
 }
 
 .Icon__img-close {
-  background-image: url("../../icon/close.svg");
+  background-image: url("../icon/close.svg");
 }
 
 .Icon__img-play {
-  background-image: url("../../icon/12_play.svg");
+  background-image: url("../icon/12_play.svg");
 }
 
 .Log {
