@@ -1,5 +1,5 @@
 
-# Shri 2020 Task 1ahahahahha ahahahahah
+# Shri 2020 Task 1ahahahahha ah
 
 ### Инструменты 
 - **Gulp**  - сборка css 
