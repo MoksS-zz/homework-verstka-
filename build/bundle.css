@@ -412,6 +412,33 @@ template {
 }
 
 :root {
+  --space-xxxxs: 6px;
+  --space-xxxs: 8px;
+  --space-xxs: 10px;
+  --space-xs: 12px;
+  --space-s: 13px;
+  --space-m: 16px;
+  --space-l: 18px;
+  --space-xl: 20px;
+  --space-xxl: 22px;
+  --space-xxxl: 24px;
+  --space-xxxxl: 30px;
+  --space-xxxxxl: 32px;
+  --font-size-s: 8px;
+  --font-size-m: 10px;
+  --font-size-l: 13px;
+  --font-size-xl: 15px;
+  --font-size-xxl: 16px;
+  --font-size-xxxl: 18px;
+  --font-size-xxxxl: 24px;
+  --line-height-xs: 15px;
+  --line-height-s: 16px;
+  --line-height-m: 18px;
+  --line-height-l: 20px;
+  --line-height-xl: 22px;
+  --line-height-xxl: 28px;
+  --line-height-xxxl: 30px;
+  --line-height-xxxxl: 36px;
   --black: #000000;
   --red-500: #FF3333;
   --green-500: #00B341;
@@ -507,7 +534,7 @@ a {
 @media only screen and (max-width: 824px) {
   .Content {
     width: 100%;
-    padding: 14px 16px 12px 16px;
+    padding: 14px var(--space-m) var(--space-xs) var(--space-m);
   }
 }
 
@@ -547,19 +574,19 @@ a {
 }
 
 .Button__indentRigth-s {
-  margin-right: 8px;
+  margin-right: var(--space-xxxs);
 }
 
 .Button__indentLeft-s {
-  margin-left: 8px;
+  margin-left: var(--space-xxxs);
 }
 
 .Button__indentBottom-s {
-  margin-bottom: 12px;
+  margin-bottom: var(--space-xs);
 }
 
 .Button__indentBottom-xl {
-  margin-bottom: 20px;
+  margin-bottom: var(--space-xl);
 }
 
 .Button__color-control {
@@ -601,11 +628,11 @@ a {
 }
 
 .Button__padding-control {
-  padding: 0 13px 0 0;
+  padding: 0 var(--space-s) 0 0;
 }
 
 .Button__padding-action {
-  padding: 0px 20px;
+  padding: 0px var(--space-xl);
 }
 
 .Button__height-default {
@@ -636,7 +663,7 @@ a {
   }
 
   .Button__padding-action {
-    padding: 0px 20px;
+    padding: 0px var(--space-xl);
   }
 
   .Button__indentRigth-s {
@@ -653,8 +680,8 @@ a {
   padding: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-m);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,7 +694,7 @@ a {
 
 @media only screen and (max-width: 824px) {
   .Copyright {
-    margin-top: 10px;
+    margin-top: var(--space-xxs);
   }
 }
 
@@ -694,7 +721,7 @@ a {
 
 @media screen and (max-width: 824px) {
   .Footer_Content {
-    padding: 12px 16px;
+    padding: var(--space-xs) var(--space-m);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -705,7 +732,7 @@ a {
 .Header {
   width: 100%;
   background: #FFFFFF;
-  padding: 10px 0px;
+  padding: var(--space-xxs) 0px;
 }
 
 .Header_Content {
@@ -734,13 +761,13 @@ a {
   flex-basis: 70%;
   margin: 0;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: var(--font-size-xxxxl);
+  line-height: var(--line-height-xxl);
   letter-spacing: 0.25px;
 }
 
 .Header_Banner__lineHeight-l {
-  line-height: 30px;
+  line-height: var(--line-height-xxxl);
 }
 
 .Header_Banner__color-default {
@@ -753,12 +780,12 @@ a {
 
 @media only screen and (max-width: 824px) {
   .Header {
-    padding: 12px 16px;
+    padding: var(--space-xs) var(--space-m);
   }
 
   .Header_Banner {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: var(--font-size-xxxl);
+    line-height: var(--line-height-xl);
   }
 }
 
@@ -778,11 +805,11 @@ a {
 }
 
 .Link_ATag {
-  margin-right: 12px;
+  margin-right: var(--space-xs);
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: var(--font-size-l);
+  line-height: var(--font-size-xxl);
   letter-spacing: 0.06px;
   color: var(--grey-1000);
   cursor: var(--pointer), auto;
@@ -816,11 +843,11 @@ a {
 }
 
 .Logo_Text {
-  margin: 10px 26px 0px 26px;
+  margin: var(--space-xxs) 26px 0px 26px;
   font-family: "YS Text";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: var(--font-size-l);
   line-height: 125%;
   /* or 16px */
   text-align: center;
@@ -834,23 +861,23 @@ a {
 .FormField_H2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  margin: 8px 0px;
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-l);
+  margin: var(--space-xxxs) 0px;
   color: var(--black);
 }
 
 .FormField_Description {
   font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-m);
   letter-spacing: 0.06px;
   color: var(--grey-1000);
-  margin: 0px 0px 22px 0px;
+  margin: 0px 0px var(--space-xxl) 0px;
 }
 
 .InputForm {
-  margin: 0px 0px 18px 0px;
+  margin: 0px 0px var(--space-l) 0px;
 }
 
 .InputForm__flex-active {
@@ -868,17 +895,17 @@ a {
 }
 
 .InputForm_Span {
-  font-size: 13px;
-  line-height: 18px;
-  margin: 0px 0px 0px 8px;
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-m);
+  margin: 0px 0px 0px var(--space-xxxs);
   letter-spacing: 0.06px;
   color: var(--black);
 }
 
 .InputForm_Name {
-  margin: 0px 8px 6px 0px;
-  font-size: 13px;
-  line-height: 18px;
+  margin: 0px var(--space-xxxs) var(--space-xxxxs) 0px;
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-m);
   letter-spacing: 0.06px;
   color: var(--black);
 }
@@ -888,12 +915,12 @@ a {
 }
 
 .InputForm_Name__indent-rigth {
-  margin-right: 8px;
+  margin-right: var(--space-xxxs);
 }
 
 .InputForm_Field {
   height: 36px;
-  padding: 9px 8px 8px 11px;
+  padding: 9px var(--space-xxxs) var(--space-xxxs) 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,7 +934,7 @@ a {
 }
 
 .InputForm_Field__position-rigth {
-  padding: 9px 0px 8px 22px;
+  padding: 9px 0px var(--space-xxxs) var(--space-xxl);
 }
 
 .InputForm_Field__sizeWidth-small {
@@ -928,8 +955,8 @@ a {
   -ms-flex-positive: 1;
   flex-grow: 1;
   border: none;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-xs);
 }
 
 .InputForm_Input__sizeWidth-small {
@@ -968,15 +995,15 @@ a {
 }
 
 .Text__size-m {
-  font-size: 13px;
+  font-size: var(--font-size-l);
 }
 
 .Text__size-s {
-  font-size: 15px;
+  font-size: var(--font-size-xl);
 }
 
 .Text__size-l {
-  font-size: 18px;
+  font-size: var(--font-size-xxxl);
 }
 
 .Text__weight-small {
@@ -988,19 +1015,19 @@ a {
 }
 
 .Text__lineHeight-xxxxl {
-  line-height: 36px;
+  line-height: var(--line-height-xxxxl);
 }
 
 .Text__lineHeight-xxl {
-  line-height: 28px;
+  line-height: var(--line-height-xxl);
 }
 
 .Text__lineHeight-xl {
-  line-height: 20px;
+  line-height: var(--line-height-l);
 }
 
 .Text__lineHeight-l {
-  line-height: 16px;
+  line-height: var(--line-height-s);
 }
 
 .Text__color-default {
@@ -1036,7 +1063,7 @@ a {
 }
 
 .Text__indentRigth-m {
-  margin-right: 10px;
+  margin-right: var(--space-xxs);
 }
 
 .Text__hide-on {
@@ -1064,7 +1091,7 @@ a {
   -webkit-box-shadow: 0px 1px 1px #4344454d, 0px 0px 1px #4344454d;
   box-shadow: 0px 1px 1px #4344454d, 0px 0px 1px #4344454d;
   border-radius: 6px;
-  padding: 12px 24px;
+  padding: var(--space-xs) var(--space-xxxl);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1075,11 +1102,11 @@ a {
 }
 
 .Card__indentBottom-s {
-  margin-bottom: 8px;
+  margin-bottom: var(--space-xxxs);
 }
 
 .Card__indentBottom-l {
-  margin-bottom: 10px;
+  margin-bottom: var(--space-xxs);
 }
 
 .Card_Info {
@@ -1109,7 +1136,7 @@ a {
 }
 
 .Card_Date__marginLeftTop-on {
-  margin-top: 8px;
+  margin-top: var(--space-xxxs);
   margin-left: 31px;
 }
 
@@ -1145,11 +1172,11 @@ a {
 }
 
 .Card_Build__indentBottom-s {
-  margin-bottom: 8px;
+  margin-bottom: var(--space-xxxs);
 }
 
 .Card_Build__indentBottom-l {
-  margin-bottom: 10px;
+  margin-bottom: var(--space-xxs);
 }
 
 .Card__column-on {
@@ -1199,12 +1226,12 @@ a {
 }
 
 .Card_Commit__indentLeft-xxl {
-  margin-left: 32px;
+  margin-left: var(--space-xxxxxl);
 }
 
 .Card_Commit__border-bottom {
   border-bottom: 1px solid var(--grey-50);
-  padding-bottom: 8px;
+  padding-bottom: var(--space-xxxs);
 }
 
 .Card_Branch {
@@ -1225,7 +1252,7 @@ a {
 }
 
 .Card_Branch__indentRigth-l {
-  margin-right: 10px;
+  margin-right: var(--space-xxs);
 }
 
 .Card_User {
@@ -1269,7 +1296,7 @@ a {
   }
 
   .Card_Date {
-    margin-top: 8px;
+    margin-top: var(--space-xxxs);
     margin-left: 36px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1308,11 +1335,11 @@ a {
   }
 
   .Card_Branch {
-    margin-bottom: 8px;
+    margin-bottom: var(--space-xxxs);
   }
 
   .Card_User {
-    margin-bottom: 8px;
+    margin-bottom: var(--space-xxxs);
   }
 }
 
@@ -1323,7 +1350,7 @@ a {
 }
 
 .Icon__indentRigth-s {
-  margin-right: 8px;
+  margin-right: var(--space-xxxs);
 }
 
 .Icon__indentRigth-xs {
@@ -1388,13 +1415,13 @@ a {
 .Log {
   border-radius: 6px;
   background-color: var(--grey-10);
-  margin: 16px 0 20px 0;
-  padding: 8px 12px;
+  margin: var(--space-m) 0 var(--space-xl) 0;
+  padding: var(--space-xxxs) var(--space-xs);
   overflow-x: auto;
 }
 
 @media only screen and (max-width: 824px) {
   .Log {
-    margin: 16px -16px 16px -16px;
+    margin: var(--space-m) -16px var(--space-m) -16px;
   }
 }
